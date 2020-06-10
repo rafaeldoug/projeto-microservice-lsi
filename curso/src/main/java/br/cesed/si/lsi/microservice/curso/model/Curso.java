@@ -1,4 +1,4 @@
-package br.cesed.si.lsi.microservice.professor.model;
+package br.cesed.si.lsi.microservice.curso.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,15 +6,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Professor {
+public class Curso {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	private String nome;
+	private Integer codigo;
 
-	private Long cursoId;
+	private String nome;
 
 	public Long getId() {
 		return id;
@@ -24,20 +24,20 @@ public class Professor {
 		this.id = id;
 	}
 
+	public Integer getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+
 	public String getNome() {
 		return nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public Long getCursoId() {
-		return cursoId;
-	}
-
-	public void setCursoId(Long cursoId) {
-		this.cursoId = cursoId;
 	}
 
 }
