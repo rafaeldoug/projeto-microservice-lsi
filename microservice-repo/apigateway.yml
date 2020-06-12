@@ -1,0 +1,38 @@
+server:
+  port: 8080
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    aluno:
+      path: /aluno/**
+      serviceId: aluno
+      strip-prefix: false
+    curso:
+      path: /info/**
+      serviceId: curso
+      strip-prefix: false
+    disciplina:
+      path: /disciplina/**
+      serviceId: disciplina
+      strip-prefix: false
+    matricula:
+      path: /matricula/**
+      serviceId: matricula
+      strip-prefix: false
+    professor:
+      path: /professor/**
+      serviceId: professor
+      strip-prefix: false
