@@ -23,7 +23,7 @@ Service Discovery (Eureka)
 - ```cd eureka```
 - ```mvn spring-boot:run```
 
-API Gateway (Zuul)
+API Gateway [Proxy] (Zuul)
 - ```cd apigateway```
 - ```mvn spring-boot:run```
 
@@ -59,7 +59,7 @@ Acessando Eureka: http://localhost:8761
 - http://localhost:8085/curso
 - http://localhost:8086/disciplina
 
-#### Via Proxy (Zuul)
+#### Via API Gateway [Proxy] (Zuul)
 - http://localhost:8080/api/aluno
 - http://localhost:8080/api/professor
 - http://localhost:8080/api/matricula
