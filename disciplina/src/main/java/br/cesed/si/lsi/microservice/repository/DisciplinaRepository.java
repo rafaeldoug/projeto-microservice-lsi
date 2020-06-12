@@ -1,4 +1,4 @@
-package br.cesed.si.lsi.microservice.controller;
+package br.cesed.si.lsi.microservice.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
