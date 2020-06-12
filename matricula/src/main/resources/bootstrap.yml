@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: matricula
+  cloud:
+    config:
+      uri: http://localhost:8888
+  h2:
+    console:
+      enabled: true
+  profiles:
+    active: default
+  

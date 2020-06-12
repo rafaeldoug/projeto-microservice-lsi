@@ -14,7 +14,15 @@ public class Professor {
 
 	private String nome;
 
-	private Long cursoId;
+	private Integer cursoCod;
+
+	public Professor() {
+	}
+
+	public Professor(String nome, Integer cursoCod) {
+		this.nome = nome;
+		this.cursoCod = cursoCod;
+	}
 
 	public Long getId() {
 		return id;
@@ -32,12 +40,12 @@ public class Professor {
 		this.nome = nome;
 	}
 
-	public Long getCursoId() {
-		return cursoId;
+	public Integer getCursoId() {
+		return cursoCod;
 	}
 
-	public void setCursoId(Long cursoId) {
-		this.cursoId = cursoId;
+	public void setCursoId(Integer cursoId) {
+		this.cursoCod = cursoId;
 	}
 
 }

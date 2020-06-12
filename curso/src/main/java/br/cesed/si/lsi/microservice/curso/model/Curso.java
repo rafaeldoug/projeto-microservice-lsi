@@ -1,27 +1,22 @@
 package br.cesed.si.lsi.microservice.curso.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Curso {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-
 	private Integer codigo;
 
 	private String nome;
 
-	public Long getId() {
-		return id;
+	public Curso() {
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public Curso(Integer codigo, String nome) {
+		this.codigo = codigo;
+		this.nome = nome;
 	}
 
 	public Integer getCodigo() {

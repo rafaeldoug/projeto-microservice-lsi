@@ -1,4 +1,4 @@
-package br.cesed.si.lsi.microserivce.dto;
+package br.cesed.si.lsi.microservice.dto;
 
 public class ProfessorDTO {
 	

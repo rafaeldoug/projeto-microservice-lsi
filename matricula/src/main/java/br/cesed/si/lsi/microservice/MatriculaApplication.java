@@ -1,4 +1,4 @@
-package br.cesed.si.lsi.microserivce;
+package br.cesed.si.lsi.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
