@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  
+eureka:
+  instance:
+    hostname: localhost
+
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    aluno:
+      path: /aluno/**
+      serviceId: aluno
+      strip-prefix: false
+    curso:
+      path: /info/**
+      serviceId: curso
+      strip-prefix: false
+    disciplina:
+      path: /disciplina/**
+      serviceId: disciplina
+      strip-prefix: false
+    matricula:
+      path: /matricula/**
+      serviceId: matricula
+      strip-prefix: false
+    professor:
+      path: /professor/**
+      serviceId: professor
+      strip-prefix: false
