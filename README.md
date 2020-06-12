@@ -1,3 +1,6 @@
+[André Lucas Fragoso Moreira](https://github.com/lucasfragoso7)
+[Rafael 'Doug' Marques Nascimento](https://github.com/rafaeldoug)
+[Thales Lindberg](https://github.com/thaleslindberg)
 # projeto-microservice-lsi
 [Passo a passo para criação do Spring Cloud Config, Eureka (Service Discovery) e Zuul (Api Gateway)](http://www.daniel-abella.com/unifacisa/arquitetura/material/aula06.pdf)
 
